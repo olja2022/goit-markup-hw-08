@@ -1,0 +1,64 @@
+.page-footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-white {
+  color: var(--primary-text-color-theme-dark);
+}
+.location,
+.contact-mail-footer,
+.contact-phone-number-footer {
+  @include font(14px, 400, 24px);
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-theme-dark);
+}
+.contact-mail-footer,
+.contact-phone-number-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .footer-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page-footer__container {
+    text-align: center;
+  }
+  .address-footer-wrap {
+    margin-bottom: 60px;
+  }
+  .page-footer__logo {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .location,
+  .contact-mail-footer {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+  .address-footer-wrap {
+    margin-right: 70px;
+  }
+  .page-footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .location,
+  .contact-mail-footer {
+    display: block;
+    margin-bottom: 9px;
+  }
+}

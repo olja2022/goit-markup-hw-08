@@ -1,0 +1,66 @@
+.modal-btn {
+  min-width: 200px;
+  font-family: inherit;
+  @include font(16px, 700, 30px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--modal-btn-color-main);
+    color: var(--primary-text-color-theme-dark);
+    cursor: pointer;
+  }
+}
+.modal-btn-portfolio {
+  font-family: inherit;
+  @include font(16px, 500, 26px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-theme-light);
+  background: var(--modal-btn-color-portfolio);
+  border-radius: 4px;
+  display: block;
+  padding: 6px 22px;
+  margin: 0 auto;
+  border: none;
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+  flex-basis: calc((100% - 32px) / 5);
+}
+.modal-btn-portfolio:hover,
+.modal-btn-portfolio:focus,
+.button-current {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color-theme-dark);
+}
+.menu-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    justify-content: center;
+  }
+}
+.button-current {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-hover-focus:hover,
+.btn-hover-focus:focus {
+  box-shadow: 0px 2px 2px 0px #0000001f;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001a;
+}

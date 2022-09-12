@@ -1,0 +1,57 @@
+.sign-mail-content {
+  display: flex;
+  flex-direction: column;
+}
+.sign-mail-content__sign-mail {
+  margin-bottom: 20px;
+  font-family: inherit;
+  @include font();
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-dark);
+}
+.sign-mail-content__form {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.03em;
+  width: 360px;
+  height: 50px;
+  padding-left: 16px;
+  color: var(--modal-btn-color-portfolio);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  transition: border-color var(--transition-dur-and-func);
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sign-mail-content__form {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .sign-modal-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sign-mail-content__sign-mail {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sign-mail-content__form {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-modal-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding-left: 93px;
+  }
+}

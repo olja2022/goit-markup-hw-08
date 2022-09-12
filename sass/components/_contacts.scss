@@ -1,0 +1,69 @@
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .contacts__phone,
+  .contacts__mail {
+    @include font(12px, 500, 14px);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+    display: flex;
+    justify-content: center;
+    transition: color var(--transition-dur-and-func);
+  }
+  .contacts__mail:hover,
+  .contacts__mail:focus,
+  .contacts__phone:hover,
+  .contacts__phone:focus {
+    color: var(--accent-color);
+  }
+  .contacts__icon {
+    align-self: center;
+    fill: currentColor;
+    margin-right: 10px;
+    order: -1;
+  }
+  .contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__icon-phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .contacts__phone,
+  .contacts__mail {
+    @include font(14px, 500, 16px);
+  }
+  .contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts__icon-phone {
+    width: 10px;
+    height: 16px;
+  }
+  .contacts__mail {
+    margin-right: 30px;
+  }
+  .contacts__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

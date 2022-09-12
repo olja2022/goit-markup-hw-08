@@ -1,0 +1,24 @@
+.sign-form-button {
+  @include font(16px, 700, 30px);
+  padding: 10px 29px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  color: var(--primary-text-color-theme-dark);
+  transition: background-color var(--transition-dur-and-func);
+}
+.sign-form-button__icon {
+  margin-left: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .sign-form-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

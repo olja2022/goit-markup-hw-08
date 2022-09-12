@@ -1,0 +1,16 @@
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-family: var(--secondary-font);
+    @include font(24px, 700, 28px);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+}
