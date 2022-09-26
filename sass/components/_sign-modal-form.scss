@@ -13,7 +13,7 @@
 .sign-mail-content__form {
   @include font(16px, 400, 20px);
   letter-spacing: 0.03em;
-  width: 360px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   color: var(--modal-btn-color-portfolio);
@@ -52,6 +52,9 @@
     display: flex;
     align-items: flex-end;
     gap: 12px;
-    padding-left: 93px;
+    margin-left: 93px;
+  }
+  .sign-mail-content__form {
+    width: 360px;
   }
 }

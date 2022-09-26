@@ -1,11 +1,12 @@
 .social-links-footer {
   display: block;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .social-links-footer {
     margin-bottom: 60px;
   }
 }
+
 .social-footer-wrap {
   font-family: var(--primary-font);
   @include font();

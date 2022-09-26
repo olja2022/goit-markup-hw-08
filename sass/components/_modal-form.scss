@@ -80,7 +80,7 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     cursor: pointer;
     margin-right: 9px;
-    margin-left: 12px;
+    margin-left: 0px;
     .modal-form-check:checked + & {
       background-color: var(--accent-color);
       background-image: url(../images/check-icon.svg);
@@ -124,5 +124,6 @@
 @media screen and (min-width: 1200px) {
   .modal-form-check-descr {
     @include font(14px, 400, 24px);
+    margin-left: 12px;
   }
 }

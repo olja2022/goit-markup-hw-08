@@ -6,23 +6,22 @@
 .logo-black {
   color: #000000;
 }
-@media screen and (max-width: 767px) {
-  .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    position: relative;
-    border-bottom: 1px solid #ececec;
-    color: #ececec;
-  }
+.page-header__logo {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .page-header__logo {
     margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .page-header {
     background-color: var(--primary-text-color-theme-dark);
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
   .page-nav {
     display: flex;
@@ -32,8 +31,6 @@
 @media screen and (min-width: 1200px) {
   .page-header__logo {
     margin-right: 93px;
-  }
-  .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
   }

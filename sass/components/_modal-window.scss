@@ -1,5 +1,6 @@
 .modal {
-  width: 450px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   min-height: 609px;
   background-color: rgba(255, 255, 255, 1);
   position: absolute;

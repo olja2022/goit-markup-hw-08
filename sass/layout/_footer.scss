@@ -17,19 +17,22 @@
 .contact-phone-number-footer {
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 767px) {
+  .address-footer-wrap {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-box {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 1199px) {
   .page-footer__container {
     text-align: center;
-  }
-  .address-footer-wrap {
-    margin-bottom: 60px;
   }
   .page-footer__logo {
     display: inline-block;
@@ -47,6 +50,7 @@
   .page-footer__container {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
   .address-footer-wrap {
     margin-right: 70px;
@@ -55,7 +59,9 @@
     display: block;
     margin-bottom: 20px;
   }
-
+  .footer-box {
+    margin-bottom: 0px;
+  }
   .location,
   .contact-mail-footer {
     display: block;
